@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>FantasyF</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../source/logo.png" alt="Fantasy">
+        <ul class="menu">
+            <li>Главная</li>
+            <li><a href="magazine.html">Работы</a></li>
+            <li><a href="#">Контакты</a> </li>
+            <li><a href="#about">О нас</a> </li>
+        </ul>
+    </header>
+    <main>
+        <!-- Slides -->
+        <div class="slides_home1">
+            <div class="MySlides fade">
+            <img class="slide" src="kaboompics_Black ceramic vase - mirror - black Nero Marquina marble console.jpg" alt="slide1">
+            <div class="slide_text"> <h2>Стильные <br> изделия ручной работы</h2></div>
+            </div>
+            <div class="MySlides fade">
+            <img class="slide" src="kaboompics_Dark mood aesthetics - furniture - black wall.jpg" alt="slide2">
+            <div class="slide_text slide_text_white"> <h2>Современные решения <br> для вашего дома</h2></div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <!-- Tagline -->
+        <article class="tagline">
+            <img src="dinning.png" alt="tagline">
+            <p>Мы воплотим в жизнь любые фантазии</p>
+            <br>
+            <h1>Fantasy Furniture</h1><br><p>лучшее решение для Вашего дома</p>
+            <p>Дизайнерская мебаль на заказ</p>
+            <ul class="tagline_list">
+                <li>Официальное оформление</li>
+                <li>Доставка любой удобной транспортной компанией</li>
+                <li>По индивидуальным размерам</li>
+                <li>Установка и монтаж <em>(Только по Краснодару)</em></li>
+            </ul>
+        </article>
+        <!-- Magazine -->
+            <section class="home_menu_text">
+                <a href="magazine.html"> Столы </a>
+                <a href="magazine.html"> Стулья </a>
+                <a href="magazine.html"> Консоли </a>
+                <a href="magazine.html"> Разное </a>
+            </section>
+            <section class="home_menu">
+            <a href="magazine.html">                
+                <img src="coffe-table(400x600).jpg" alt="">
+            </a>
+            <a href="magazine.html">         
+                <img src="chair.jpg" alt="">
+            </a>
+            <a href="magazine.html">               
+                <img src="consol(400x600).jpg" alt="">
+            </a>
+            <a href="magazine.html">
+                <img src="all(400x600).jpg" alt="">
+            </a>
+        </section>
+        <!-- Button -->
+        <form action="button" class="more">
+           <button class="more_button"> Ещё </button>
+        </form>
+        <!-- Slides2 -->
+        <div id="about" class="lending">
+            <h2> Металическая мебель - единство изящности и прочности.</h2>
+                <p>
+                    Из металла получается легкая, но при этом очень прочная мебель.
+                    <br>
+                    А если к этому еще приложит руки великолепный мастер,
+                    <br>
+                    то получается настоящее произведение искусства.
+                </p>
+        </div>
+        <article class="about">
+            <div class="about_text">
+                <P>
+                    Мы специализируемся не только на изготовлении мебели, 
+                    но и различных декоративных изделий из: <br> металла <br> стекла <br>
+                    натурального камня
+                </P>
+                <br>
+                <br>
+                <p>Вы сами можете руководить процессом
+                    <br>
+                    а именно выбирать:</p>
+                    <ul class="about_list">
+                        <li>Размеры </li>
+                        <li>Дизайн</li>
+                        <li>Цвет</li>
+                        <li>Материал</li>
+                    </ul>
+            </div>
+                <div class="about_photo welding">
+                    <img src="home-about(400x533).jpg" alt="welding">
+                </div>
+                <div class="about_photo welding">
+                    <img src="home-about2(400x603).jpg" alt="welding">
+                </div>
+        </article>
+    </main>
+    <footer>
+data
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

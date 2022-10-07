@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    }
+    
+*,* :before, * :after {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     box-sizing:border-box;
+    }
+
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+
+nav, footer, header, aside {display: block;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {font-family: inherit;}
+    
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+html{
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+}
+
+body{
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    
+}
+
+.menu{
+    display: flex;
+    margin: 0px 0px 40px;
+    justify-content: center;
+    justify-items: center;
+    font-size: 1.6vmax;
+}
+
+header img{
+    margin-top: 30px;
+    margin-left: 20%;
+    
+}
+
+.menu li{
+    margin: 0px 30px 0px 0px;
+    color: rgb(190, 180, 173);
+}
+
+.menu li a:hover{
+    color: rgb(222, 215,212);
+}
+
+.menu li a{
+    color: rgb(190, 180, 173)
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.slides_home1{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1280px;
+    box-shadow:  10px 20px 40px rgba(40, 41, 40, 0.918);
+    border-radius: 5%;
+}
+
+.slide_text{
+    color: rgb(99, 96, 94);
+    padding: 8px 12px;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    font-weight:600;
+    font-size: 3vw;
+}
+.slide_text_white{
+    color: rgb(192, 189, 185);
+}
+
+.MySlides{
+    display: none;
+    position: relative;
+    box-shadow:  10px 20px 40px rgba(40, 41, 40, 0.918);
+    border-radius: 5%
+    
+}
+.slide{
+    box-shadow:  10px 20px 40px rgba(40, 41, 40, 0.918);
+    border-radius: 5%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+  @keyframes fade {
+    from {opacity: 0.1}
+    to {opacity: 2}
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 70px 0px;
+}
+
+article{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+article p, h1{
+    color: rgb(190, 180, 173);
+    font-size: 1.5vmax;
+    line-height: 30px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 16px rgb(99, 96, 94);
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 50%;
+}
+
+.tagline_list{
+    background-color: rgba(99, 96, 94, 0.384) ;
+    margin: 5% 0 0 2%;
+    padding: 2% 2%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 16px rgba(7, 7, 7, 0.527);
+}
+
+.tagline_list li{
+    font-size: 1.3vmax;
+    list-style: inside ;
+    line-height: 2em;
+    letter-spacing: 4px;
+    color: rgb(190, 180, 173);
+    text-shadow: 2px 2px 16px rgb(7, 7, 7);
+}
+
+article h1{
+    font-size: 2vmax;
+}
+
+.home_menu_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 11% 3% 11%;
+    
+}
+
+.home_menu_text a{
+    font-size: 1.5vmax;
+    color:rgb(190, 180, 173);
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 16px rgb(99, 96, 94);
+    
+}
+
+.home_menu_text a:hover{
+    text-shadow: 4px 3px 15px rgb(185, 185, 185) ;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 3% 3% 3%;
+}
+
+section img{
+    flex-grow: 0;
+    flex-shrink: 1;
+    align-self: center;  
+    border-radius: 10px;
+}
+
+section img:hover{
+    animation: hover 1.9s;
+    box-shadow: 20px 15px 40px rgb(0, 0, 0);
+}
+
+@keyframes hover {
+    10% { transform: scale(0.9); }
+}
+
+.more_button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 7%;
+	line-height: 44px;
+	background-color: rgb(184, 180, 180);
+	height: 6%;
+	padding: 0 2%;
+	box-shadow: 2px 5px 20px rgb(36, 36, 36);
+	font-size: 1.3vmax;
+    color: #222222;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+   
+}
+
+.more_button:hover{
+    padding: 0 2.5%;
+    box-shadow: 10px 20px 40px rgb(15, 15, 15);
+}
+
+.lending{
+    width: 70%;
+    margin-right: 5%;
+    color: rgb(190, 180, 173);
+    font-size: 1.3vmax;
+    line-height: 30px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 16px rgb(99, 96, 94);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    margin: 10% 0 10% 0;
+}
+
+.about_text{
+    width: 50%;
+    margin-right: 5%;
+    padding: 2% 0 2% 5%;
+    color: rgb(190, 180, 173);
+    font-size: 1.8vmax;
+    line-height: 30px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 16px rgb(99, 96, 94);
+    text-transform: uppercase;
+}
+
+.about_photo {
+    max-height: 533px;
+    display: none;
+    position: relative;
+    box-shadow:  10px 20px 40px rgba(40, 41, 40, 0.918);
+    border-radius: 5%
+    
+}
+
+.about_photo img{
+    box-shadow:  10px 20px 40px rgba(40, 41, 40, 0.918);
+    border-radius: 5%
+}
+
+.welding{
+    -webkit-animation-name: welding;
+    -webkit-animation-duration: 1.5s;
+    animation-name: welding;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes welding {
+    from {opacity: 0.2}
+    to {opacity: 1}
+}
+  
+  @keyframes welding {
+    from {opacity: 0.1}
+    to {opacity: 2}
+}
+
+.about_text p{
+    font-size: 1.3vmax;
+    align-self: baseline;
+    text-align: left;
+}
+
+.about_list{
+    padding: 1% 0;
+}
+
+.about_list li{
+    font-size: 1.2vmax;
+    list-style: inside ;
+}
+
+footer{
+    display: block;
+    background-color: rgb(53, 53, 53);
+    position: absolute;
+    width: 100%;
+    height: 190px;
+}
+
